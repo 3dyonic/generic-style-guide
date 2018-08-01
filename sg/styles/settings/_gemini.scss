@@ -1,0 +1,120 @@
+// GEMINI
+//Default stk
+$color-stk-gemini-white: #fff;
+//Blue
+$color-stk-gemini-catalina-blue:#054179;
+$color-stk-gemini-venice-blue: #084d8d;
+$color-stk-gemini-madison: #093863;
+$color-stk-gemini-fun-blue: #1d6cb4;
+$color-stk-gemini-chambray: #3a658e;
+$color-stk-gemini-slate-gray: #6f8493;
+$color-stk-gemini-nepal: #8ea8c1;
+//Red
+$color-stk-gemini-amaranth: #ef3340;
+//Yellow
+$color-stk-gemini-supernova: #ffcd00;
+$color-stk-gemini-kournikova:#ffe371;
+//orange
+$color-stk-gemini-pizazz: #ff9000;
+//Green
+$color-stk-gemini-christi: #65a318;
+$color-stk-gemini-lima: #78be20;
+//Brown
+$color-stk-gemini-desert: #ab6520;
+$color-stk-gemini-brandy-punch: #cd8031;
+$color-stk-gemini-buddha-gold: #c7a20b;
+$color-stk-gemini-corn: #d8ae00;
+//Monos
+$color-stk-gemini-cod-gray: #181818;
+$color-stk-gemini-mako: #41494e;
+$color-stk-gemini-edward: #aeafae;
+$color-stk-gemini-alto: #d5d5d5;
+$color-stk-gemini-mercury: #e9e9e9;
+
+//STYLE GUIDE
+// scheme
+$sg-gemini-color-primary: $color-stk-gemini-madison;
+$sg-gemini-color-secondary: $color-stk-gemini-fun-blue;
+$sg-gemini-color-tertiary: $color-stk-gemini-pizazz;
+//$sg-color-inverse: red;
+$sg-gemini-color-accent: $color-stk-gemini-lima;
+$sg-gemini-color-neutral:$color-stk-gemini-edward;
+
+//semantic
+$sg-gemini-color-bright: $color-stk-gemini-white;
+$sg-gemini-color-dark: $color-stk-gemini-cod-gray;
+$sg-gemini-color-action: $sg-gemini-color-tertiary;
+$sg-gemini-color-danger: $color-stk-gemini-amaranth;
+$sg-gemini-color-info: $sg-gemini-color-secondary;
+$sg-gemini-color-success: $sg-gemini-color-accent;
+$sg-gemini-color-warning: darken($sg-gemini-color-action,20%);
+$sg-gemini-color-system: $sg-gemini-color-neutral;
+
+$brand-gemini:(
+        stk:(
+                $color-stk-gemini-white,
+                $color-stk-gemini-catalina-blue,
+                $color-stk-gemini-venice-blue,
+                $color-stk-gemini-madison,
+                $color-stk-gemini-fun-blue,
+                $color-stk-gemini-chambray,
+                $color-stk-gemini-slate-gray,
+                $color-stk-gemini-nepal,
+                $color-stk-gemini-amaranth,
+                $color-stk-gemini-supernova,
+                $color-stk-gemini-kournikova,
+                $color-stk-gemini-pizazz,
+                $color-stk-gemini-christi,
+                $color-stk-gemini-lima,
+                $color-stk-gemini-desert,
+                $color-stk-gemini-brandy-punch,
+                $color-stk-gemini-buddha-gold,
+                $color-stk-gemini-corn,
+                $color-stk-gemini-cod-gray,
+                $color-stk-gemini-mako,
+                $color-stk-gemini-edward,
+                $color-stk-gemini-alto,
+                $color-stk-gemini-mercury),
+        stk-name:(
+                white,
+                catalina-blue,
+                venice-blue,
+                madison,
+                fun-blue,
+                chambray,
+                slate-gray,
+                nepal,
+                amaranth,
+                supernova,
+                kournikova,
+                pizazz,
+                christi,
+                lima,
+                desert,
+                brandy-punch,
+                buddha-gold,
+                corn,
+                cod-gray,
+                mako,
+                edward,
+                alto,
+                mercury,
+        ),
+        brand:(
+                primary: $sg-gemini-color-primary,
+                secondary: $sg-gemini-color-secondary,
+                tertiary: $sg-gemini-color-tertiary,
+          // inverse: $sg-color-inverse,
+                neutral: $sg-gemini-color-neutral,
+                accent: $sg-gemini-color-accent,
+                bright: $sg-gemini-color-bright,
+                dark: $sg-gemini-color-dark,
+        ),
+        styles:(
+                action: $sg-gemini-color-action,
+                danger: $sg-gemini-color-danger,
+                info: $sg-gemini-color-info,
+                success: $sg-gemini-color-success,
+                system: $sg-gemini-color-system,
+                warning: $sg-gemini-color-warning,),
+);

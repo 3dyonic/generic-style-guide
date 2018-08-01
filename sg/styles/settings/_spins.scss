@@ -1,0 +1,86 @@
+//SPINS ------------------- \
+// STACK
+$color-spins-stk-white: #fff;
+//Blue
+$color-spins-stk-rhino :#2a3052;
+$color-spins-stk-east-bay: #424b79;
+$color-spins-stk-picton-blue: #49c7eb;
+$color-spins-stk-purple-heart: #5529cb;
+$color-spins-stk-anakiwa: #aaebfe;
+//Red
+$color-spins-stk-wild-watermelon: #ff517e;
+//Yellow
+//pink
+$color-spins-stk-pastel-pink: #ffcbd8;
+//orange
+//Green
+$color-spins-stk-mantis:#84bd68;
+//Brown
+//Monos
+$color-spins-stk-mercury:#e9e9e9;
+
+//STYLE GUIDE
+// scheme
+$sg-spins-color-primary: $color-spins-stk-anakiwa;
+$sg-spins-color-secondary: $color-spins-stk-anakiwa;
+$sg-spins-color-tertiary: $color-spins-stk-anakiwa;
+//$sg-color-inverse: red;
+$sg-spins-color-accent: $color-spins-stk-anakiwa;
+$sg-spins-color-neutral: $color-spins-stk-anakiwa;
+
+//semantic
+$sg-spins-color-bright: $color-spins-stk-anakiwa;
+$sg-spins-color-dark: $color-spins-stk-anakiwa;
+$sg-spins-color-action: $color-spins-stk-anakiwa;
+$sg-spins-color-danger: $color-spins-stk-anakiwa;
+$sg-spins-color-info: $color-spins-stk-anakiwa;
+$sg-spins-color-success: $sg-spins-color-accent;
+$sg-spins-color-warning: darken($sg-spins-color-action,20%);
+$sg-spins-color-system: $sg-spins-color-neutral;
+
+
+
+
+$brand-spins:(
+        stk:(
+                $color-spins-stk-white,
+                $color-spins-stk-rhino,
+                $color-spins-stk-east-bay,
+                $color-spins-stk-picton-blue,
+                $color-spins-stk-purple-heart,
+                $color-spins-stk-anakiwa,
+                $color-spins-stk-wild-watermelon,
+                $color-spins-stk-pastel-pink,
+                $color-spins-stk-mantis,
+                $color-spins-stk-mercury,
+        ),
+        stk-name:(
+                white,
+                rhino,
+                east-bay,
+                picton-blue,
+                purple-heart,
+                anakiwa,
+                wild-watermelon,
+                pastel-pink,
+                mantis,
+                mercury,
+        ),
+        brand:(
+                primary: $sg-spins-color-primary,
+                secondary: $sg-spins-color-secondary,
+                tertiary: $sg-spins-color-tertiary,
+          // inverse: $sg-color-inverse,
+                neutral: $sg-spins-color-neutral,
+                accent: $sg-spins-color-accent,
+                bright: $sg-spins-color-bright,
+                dark: $sg-spins-color-dark,
+        ),
+        styles:(
+                action: $sg-spins-color-action,
+                danger: $sg-spins-color-danger,
+                info: $sg-spins-color-info,
+                success: $sg-spins-color-success,
+                system: $sg-spins-color-system,
+                warning: $sg-spins-color-warning,),
+);

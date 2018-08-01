@@ -1,0 +1,148 @@
+//DEMO colors abstraction and configuration.
+
+// USING COLOR STACKS:
+// prefix: 'color-stk'
+// using unieqe strings for colors.
+// 1. define all hex colors in one place
+// 2. find similarities and choose or interpolate.
+// 3. refrance stacks stings within semantic variable to allow flexebility
+//    and configuration leaving semantics seperated.
+
+//Default stk
+$color-stk-default-white: #fff;
+//Blue
+$color-stk-default-catalina-blue:#054179;
+$color-stk-default-venice-blue: #084d8d;
+$color-stk-default-madison: #093863;
+$color-stk-default-fun-blue: #1d6cb4;
+$color-stk-default-chambray: #3a658e;
+$color-stk-default-slate-gray: #6f8493;
+$color-stk-default-nepal: #8ea8c1;
+//Red
+$color-stk-default-amaranth: #ef3340;
+//Yellow
+$color-stk-default-supernova: #ffcd00;
+$color-stk-default-kournikova:#ffe371;
+//orange
+$color-stk-defalt-pizazz: #ff9000;
+//Green
+$color-stk-default-christi: #65a318;
+$color-stk-default-lima: #78be20;
+//Brown
+$color-stk-default-desert: #ab6520;
+$color-stk-default-brandy-punch: #cd8031;
+$color-stk-default-buddha-gold: #c7a20b;
+$color-stk-default-corn: #d8ae00;
+//Monos
+$color-stk-default-cod-gray: #181818;
+$color-stk-default-mako: #41494e;
+$color-stk-default-edward: #aeafae;
+$color-stk-default-alto: #d5d5d5;
+$color-stk-default-mercury: #e9e9e9;
+
+//STYLE GUIDE
+// scheme
+$sg-color-primary: $color-stk-default-madison;
+$sg-color-secondary: $color-stk-default-fun-blue;
+$sg-color-tertiary: $color-stk-defalt-pizazz;
+//$sg-color-inverse: red;
+$sg-color-accent: $color-stk-default-lima;
+$sg-color-neutral:$color-stk-default-edward;
+
+//semantic
+$sg-color-bright: $color-stk-default-white;
+$sg-color-dark: $color-stk-default-cod-gray;
+$sg-color-action: $sg-color-tertiary;
+$sg-color-danger: $color-stk-default-amaranth;
+$sg-color-info: $sg-color-secondary;
+$sg-color-success: $sg-color-accent;
+$sg-color-warning: darken($sg-color-action,20%);
+$sg-color-system: $sg-color-neutral;
+
+$brand-default:(
+        stk:(
+                $color-stk-default-white,
+                $color-stk-default-catalina-blue,
+                $color-stk-default-venice-blue,
+                $color-stk-default-madison,
+                $color-stk-default-fun-blue,
+                $color-stk-default-chambray,
+                $color-stk-default-slate-gray,
+                $color-stk-default-nepal,
+                $color-stk-default-amaranth,
+                $color-stk-default-supernova,
+                $color-stk-default-kournikova,
+                $color-stk-defalt-pizazz,
+                $color-stk-default-christi,
+                $color-stk-default-lima,
+                $color-stk-default-desert,
+                $color-stk-default-brandy-punch,
+                $color-stk-default-buddha-gold,
+                $color-stk-default-corn,
+                $color-stk-default-cod-gray,
+                $color-stk-default-mako,
+                $color-stk-default-edward,
+                $color-stk-default-alto,
+                $color-stk-default-mercury),
+        stk-name:(
+                white,
+                catalina-blue,
+                venice-blue,
+                madison,
+                fun-blue,
+                chambray,
+                slate-gray,
+                nepal,
+                amaranth,
+                supernova,
+                kournikova,
+                pizazz,
+                christi,
+                lima,
+                desert,
+                brandy-punch,
+                buddha-gold,
+                corn,
+                cod-gray,
+                mako,
+                edward,
+                alto,
+                mercury,
+        ),
+        brand:(
+                primary: $sg-color-primary,
+                secondary: $sg-color-secondary,
+                tertiary: $sg-color-tertiary,
+          // inverse: $sg-color-inverse,
+                neutral: $sg-color-neutral,
+                accent: $sg-color-accent,
+                bright: $sg-color-bright,
+                dark: $sg-color-dark,
+        ),
+        styles:(
+                action: $sg-color-action,
+                danger: $sg-color-danger,
+                info: $sg-color-info,
+                success: $sg-color-success,
+                system: $sg-color-system,
+                warning: $sg-color-warning,),
+);
+
+//scaffold
+//$sg-body-bg: red;
+
+//$sg-color-mono: red;
+
+//$sg-type-color:red;
+//$sg-type-mute-color:red;
+//$link-color:red;
+//$link-hover-color: red;; //darken($link-color, 15%) !default;
+
+
+//btns (defined locally)
+//$btn-primary-color: null;
+//$btn-primary-hover-color:null;
+//$btn-primary-hover-active-color: null;
+//$btn-secondary-color: null;
+//$btn-secondary-hover-color:null;
+//$btn-secondary-hover-active-color: null;

@@ -1,0 +1,79 @@
+//JUST DEMO UI, using bootstrap grid and use case patterns
+body {
+  padding: 10px;
+}
+
+.ui-i-stack {
+  margin: 5px;
+  padding: 3px;
+  //background: red;
+  min-height: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+  display: none;
+  &:before,
+  &:after {
+    font-size: 12px;
+    display: inline-block;
+    float: left;
+    background-color: white;
+    min-height: 100%;
+    padding: 0 5px;
+  }
+  &:after {
+    text-transform: capitalize;
+  }
+}
+
+.ui-i-swatch {
+  margin: 0 5px 10px 0;
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, .3);
+  display: inline-block;
+  min-height: 80px;
+  min-width: 100px;
+  padding: 3px 40px 40px 3px;
+  position: relative;
+  &:before,
+  &:after {
+    display: block;
+    padding: 0 5px;
+    background: white;
+    font-size: 11px;
+  }
+  &__swatch-list {
+    overflow: hidden;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+  }
+  &__swatch-item {
+    float: left;
+    width: 30px;
+    height: 100%;
+  }
+}
+
+.ui-i-stack-wrapper,
+.ui-i-swatch-wrapper {
+  overflow: hidden;
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+.ui-i-uppercase {
+  text-transform: uppercase;
+}
+
+.ui-i-semantic {
+  // border: 1px solid red;
+  margin-bottom: 10px;
+  padding: 5px;
+  //color: red;
+}

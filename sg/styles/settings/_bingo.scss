@@ -1,0 +1,83 @@
+// BINGO
+// STACK
+$color-stk-bingo-white: #fff;
+// Yellow
+$color-stk-bingo-bright-sun: #fdd941;
+// Blue
+$color-stk-bingo-science-blue:#0050e2;
+$color-stk-bingo-deep-koamaru: #112268;
+$color-stk-bingo-bay-of-many: #23337e;
+$color-stk-bingo-san-marino: #4a5ab1;
+// Pink
+$color-stk-bingo-hollywood-cerise: #ec028d;
+$color-stk-bingo-hollywood-cerise: #fa25a4;
+// Gray
+$color-stk-bingo-mischka: #dadce9;
+$color-stk-bingo-athens-gray: #f1f2f7;
+// Black
+$color-stk-bingo-black-pearl: #050a1e;
+
+//STYLE GUIDE
+// scheme
+$sg-bingo-color-primary: $color-stk-bingo-hollywood-cerise;
+$sg-bingo-color-secondary: $color-stk-bingo-hollywood-cerise;
+$sg-bingo-color-tertiary:$color-stk-bingo-san-marino;
+//$sg-color-inverse: red;
+$sg-bingo-color-accent: $color-stk-bingo-san-marino;
+$sg-bingo-color-neutral: $color-stk-bingo-san-marino;
+
+//semantic
+$sg-bingo-color-bright: $color-stk-bingo-san-marino;
+$sg-bingo-color-dark: $color-stk-bingo-san-marino;
+$sg-bingo-color-action: $color-stk-bingo-san-marino;
+$sg-bingo-color-danger: $color-stk-bingo-san-marino;
+$sg-bingo-color-info: $color-stk-bingo-san-marino;
+$sg-bingo-color-success: $color-stk-bingo-san-marino;
+$sg-bingo-color-warning: darken($sg-bingo-color-action,20%);
+$sg-bingo-color-system: $sg-bingo-color-neutral;
+
+$brand-bingo:(
+        stk:(
+                $color-stk-bingo-white,
+                $color-stk-bingo-bright-sun,
+                $color-stk-bingo-science-blue,
+                $color-stk-bingo-deep-koamaru,
+                $color-stk-bingo-bay-of-many,
+                $color-stk-bingo-san-marino,
+                $color-stk-bingo-hollywood-cerise,
+                $color-stk-bingo-hollywood-cerise,
+                $color-stk-bingo-mischka,
+                $color-stk-bingo-athens-gray,
+                $color-stk-bingo-black-pearl,
+        ),
+        stk-name:(
+                white,
+                bright-sun,
+                science-blue,
+                deep-koamaru,
+                bay-of-many,
+                san-marino,
+                hollywood-cerise,
+                hollywood-cerise,
+                bingo-mischka,
+                athens-gray,
+                black-pearl,
+        ),
+        brand:(
+                primary: $sg-bingo-color-primary,
+                secondary: $sg-bingo-color-secondary,
+                tertiary: $sg-bingo-color-tertiary,
+          // inverse: $sg-color-inverse,
+                neutral: $sg-bingo-color-neutral,
+                accent: $sg-bingo-color-accent,
+                bright: $sg-bingo-color-bright,
+                dark: $sg-bingo-color-dark,
+        ),
+        styles:(
+                action: $sg-bingo-color-action,
+                danger: $sg-bingo-color-danger,
+                info: $sg-bingo-color-info,
+                success: $sg-bingo-color-success,
+                system: $sg-bingo-color-system,
+                warning: $sg-bingo-color-warning,),
+);

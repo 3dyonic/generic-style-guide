@@ -1,0 +1,83 @@
+// SEMI SEMANTIC CONVENTION
+// VEGAS ------------------------------------------ \
+// STACK
+$color-vegas-stk-white: #fff;
+// Yellow
+$color-vegas-stk-amber: #ffc000;
+$color-vegas-stk-supernova: #ffcd00;
+// Green
+$color-vegas-stk-screamin-green: #52ff77;
+// Pink
+$color-vegas-stk-rose: #ff008a;
+// Red
+$color-vegas-stk-valencia: #d74d4d;
+$color-vegas-stk-radical-red: #ff395a;
+// Blue
+$color-vegas-stk-congress-blue: #004696;
+$color-vegas-stk-dodger-blue: #1a7aff;
+$color-vegas-stk-curious-blue: #3399cc;
+$color-vegas-stk-international-klein-blue:#002ab3;
+// Dark
+$color-vegas-stk-stratos:#000a3b;
+
+// BRAND (should be semantic)
+$sg-vegas-color-primary:$color-vegas-stk-congress-blue;
+$sg-vegas-color-secondary:red;
+$sg-vegas-color-tertiary:red;
+$sg-vegas-color-neutral:red;
+$sg-vegas-color-accent:red;
+$sg-vegas-color-bright:red;
+$sg-vegas-color-dark:red;
+$sg-vega-scolor-action:red;
+$sg-vegas-color-danger:red;
+$sg-vegas-color-info:red;
+$sg-vegas-color-success:red;
+$sg-vegas-color-system:red;
+$sg-vegas-color-warning:red;
+$brand-vegas:(
+        stk:(
+                $color-vegas-stk-white,
+                $color-vegas-stk-amber,
+                $color-vegas-stk-supernova,
+                $color-vegas-stk-screamin-green,
+                $color-vegas-stk-rose,
+                $color-vegas-stk-valencia,
+                $color-vegas-stk-radical-red,
+                $color-vegas-stk-congress-blue,
+                $color-vegas-stk-dodger-blue,
+                $color-vegas-stk-curious-blue,
+                $color-vegas-stk-international-klein-blue,
+                $color-vegas-stk-stratos,
+        ),
+        stk-name:(
+                white,
+                amber,
+                supernova,
+                screamin-green,
+                rose,
+                valencia,
+                radical-red,
+                congress-blue,
+                dodger-blue,
+                curious-blue,
+                international-klein-blue,
+                stratos,
+        ),
+        brand:(
+                primary: $sg-vegas-color-primary,
+                secondary: $sg-vegas-color-secondary,
+                tertiary: $sg-vegas-color-tertiary,
+          // inverse: $sg-color-inverse,
+                neutral: $sg-vegas-color-neutral,
+                accent: $sg-vegas-color-accent,
+                bright: $sg-vegas-color-bright,
+                dark: $sg-vegas-color-dark,
+        ),
+        styles:(
+                action: $sg-vega-scolor-action,
+                danger: $sg-vegas-color-danger,
+                info: $sg-vegas-color-info,
+                success: $sg-vegas-color-success,
+                system: $sg-vegas-color-system,
+                warning: $sg-vegas-color-warning,),
+);

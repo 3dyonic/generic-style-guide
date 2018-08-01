@@ -1,0 +1,79 @@
+//CASINO ------------------- \
+// STACK
+$color-casino-stk-mine-shaft: #222222;
+//Blue
+$color-casino-stk-bondi-blue:#07a3b4;
+//Red
+$color-casino-stk-red-ribbon: #f60843;
+//Yellow
+//pink
+//purple
+$color-casino-stk-seance: #7323aa;
+//orange
+$color-casino-stk-orange-peel:#ffa200;
+//Green
+$color-casino-stk-limeade: #659900;
+//Brown
+//Monos
+$color-casino-stk-gallery: #ececec;
+$color-casino-stk-alto: #dbdbdb;
+
+// BRAND
+//STYLE GUIDE
+// scheme
+$sg-casino-color-primary: $color-casino-stk-mine-shaft;
+$sg-casino-color-secondary: $color-casino-stk-seance;
+$sg-casino-color-tertiary: $color-casino-stk-seance;
+//$sg-color-inverse: red;
+$sg-casino-color-accent: $color-casino-stk-orange-peel;
+$sg-casino-color-neutral:$color-casino-stk-seance;
+
+//semantic
+$sg-casino-color-bright: $color-casino-stk-seance;
+$sg-casino-color-dark: $color-casino-stk-seance;
+$sg-casino-color-action: $sg-casino-color-primary;
+$sg-casino-color-danger: $color-casino-stk-seance;
+$sg-casino-color-info: $color-casino-stk-seance;
+$sg-casino-color-success: $color-casino-stk-seance;
+$sg-casino-color-warning: darken($sg-casino-color-accent,10%);
+$sg-casino-color-system: $color-casino-stk-seance;
+
+$brand-casino:(
+        stk:(
+                $color-casino-stk-mine-shaft,
+                $color-casino-stk-bondi-blue,
+                $color-casino-stk-red-ribbon,
+                $color-casino-stk-seance,
+                $color-casino-stk-orange-peel,
+                $color-casino-stk-limeade,
+                $color-casino-stk-gallery,
+                $color-casino-stk-alto,
+        ),
+        stk-name:(
+                mine-shaft,
+                bondi-blue,
+                red-ribbon,
+                seance,
+                orange-peel,
+                limeade,
+                gallery,
+                alto,
+        ),
+        brand:(
+                primary: $sg-casino-color-primary,
+                secondary: $sg-casino-color-secondary,
+                tertiary: $sg-casino-color-tertiary,
+          // inverse: $sg-color-inverse,
+                neutral: $sg-casino-color-neutral,
+                accent: $sg-casino-color-accent,
+                bright: $sg-casino-color-bright,
+                dark: $sg-casino-color-dark,
+        ),
+        styles:(
+                action: $sg-casino-color-action,
+                danger: $sg-casino-color-danger,
+                info: $sg-casino-color-info,
+                success: $sg-casino-color-success,
+                system: $sg-casino-color-system,
+                warning: $sg-casino-color-warning,),
+);

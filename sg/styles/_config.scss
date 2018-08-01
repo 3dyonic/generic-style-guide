@@ -1,0 +1,71 @@
+// DEFINING COLORS via brand map
+// Dependencies: [brand configs, demo-ui].
+// Availbable themes
+//  $brand-default,
+//  $brand-casino,
+//  $brand-gemini,
+//  $brand-vegas,
+//  $brand-spins
+//Define theme here
+$current-theme: $brand-gemini;
+// LOOPING THROUG MAP to pupolate ui styles
+// stk
+@each $stack in (map-get($current-theme, stk)) {
+  $i: index((map-get($current-theme, stk)), $stack);
+  .ui-i-stack:nth-child(#{$i}) {
+    display: block;
+    background-color: $stack;
+    &:before {
+      content:"#{$stack} RGB(#{red($stack)}/#{green($stack)} /#{blue($stack)})";
+    }
+  }
+}
+// stk names
+@each $stack-name in (map-get($current-theme, stk-name)) {
+  $i: index((map-get($current-theme, stk-name)), $stack-name);
+  .ui-i-stack:nth-child(#{$i}) {
+    &:after {
+      content:"#{$stack-name}";
+    }
+  }
+}
+
+// brand colors
+@each $color-type,
+$color-value in (map-get($current-theme, brand)) {
+  // Get the RGB values
+  .#{$color-type} {
+    background-color: $color-value;
+    &:before {
+      content: '#{($color-type)}';
+    }
+    &:after {
+      content: '#{($color-value)} / RGB(#{red($color-value)},#{green($color-value)}, #{blue($color-value)})';
+    }
+    >ul>li {
+      &:nth-child(1) {
+        background-color: lighten($color-value, 10%);
+      }
+      &:nth-child(2) {
+        background-color: $color-value;
+      }
+      &:nth-child(3) {
+        background-color: darken($color-value, 10%);
+      }
+    }
+  }
+}
+
+// semantic colors
+@each $color-type,
+$color-value in (map-get($current-theme, styles)) {
+  // Get the RGB values
+  .#{$color-type} {
+    border: 1px solid $color-value;
+    &:before {
+      color: $color-value;
+      text-transform: capitalize;
+      content: '#{($color-type)}';
+    }
+  }
+}
