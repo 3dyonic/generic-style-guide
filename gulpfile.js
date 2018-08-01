@@ -7,13 +7,13 @@ var gulp = require('gulp'),
 
 
 gulp.task('sass', function () {
-    return gulp.src('./**/*.scss')
+    return gulp.src('./styles/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css'));
 });
 
 gulp.task('sass:watch', function () {
-    gulp.watch('./**/*.scss', ['sass']);
+    gulp.watch('./styles/**/*.scss', ['sass']);
 });
 
 gulp.task('connect', function() {
@@ -30,13 +30,13 @@ gulp.task('html', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(['./*.html', './**/*.scss'], ['html','sass']);
+    gulp.watch(['./*.html', './styles/**/*.scss'], ['html','sass']);
 });
 
 gulp.task('default', ['connect', 'watch']);
 
 gulp.task('sassLint', function () {
-    return gulp.src('./**/*.s+(a|c)ss')
+    return gulp.src('styles/**/*.s+(a|c)ss')
         .pipe(sassLint(
             {
                 configFile: '.sass-lint.yml',
