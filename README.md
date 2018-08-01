@@ -1,3 +1,3 @@
-# ngs-sg
+# generic style guide
 
-[https://yonatan-gala.github.io/ngs-sg/]
+[https://yonatan-gala.github.io/generic-style-guide/]
