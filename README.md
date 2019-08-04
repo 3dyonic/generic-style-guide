@@ -1,3 +1,3 @@
 # generic style guide
 
-[https://yonatan-gala.github.io/generic-style-guide/]
+[https://3dyonic.github.io/generic-style-guide/]
